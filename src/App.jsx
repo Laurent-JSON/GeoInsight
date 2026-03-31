@@ -13,8 +13,9 @@ const App = () => {
       <Header />
       {/* <Header onPlaceChanged={onPlaceChanged} onLoad={onLoad} /> */}
       
-      <div style={{ display: 'flex', width: '100%', gap: '24px' }}>
-        <div style={{ width: '33.33%' }}><h1>List</h1>
+      <div style={{ display: 'flex', width: '100%', gap: '24px',  }}>
+        <div style={{ width: '33.33%' }}>
+          <List />
           {/* <List
             isLoading={isLoading}
             childClicked={childClicked}
