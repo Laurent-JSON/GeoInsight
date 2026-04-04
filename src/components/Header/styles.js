@@ -107,12 +107,12 @@ const useStyles = makeStyles()((theme) => ({
   toolbar: {
     display: 'flex',
     justifyContent: 'space-between',
-    alignItems: 'center', // Ajoute un centrage vertical
-    minHeight: '64px', // Hauteur minimale pour le centrage
+    alignItems: 'center',
+    minHeight: '64px', 
   },
   centerBox: {
     display: 'flex',
-    alignItems: 'center', // Centrage vertical pour "Explore new places"
+    alignItems: 'center',
   },
 }));
 
