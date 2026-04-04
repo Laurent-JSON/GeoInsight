@@ -15,6 +15,7 @@ const App = () => {
   // const [coordinates, setCoordinates] = useState({ lat: 0, lng: 0 });
   const [coordinates, setCoordinates] = useState({ lat: 52.5200, lng: 13.4050 });
   const [bounds, setBounds] = useState({});
+  const [childClicked, setChildClicked] = useState(null);
 
 
   useEffect(() => {
@@ -41,7 +42,7 @@ const App = () => {
         <Grid size={{ xs: 12, md: 4 }} sx={{ height: '100%' }}>
           <List
             // isLoading={isLoading}
-            // childClicked={childClicked}
+            childClicked={childClicked}
             places={places}
           // type={type}
           // setType={setType}
@@ -56,6 +57,7 @@ const App = () => {
             setCoordinates={setCoordinates}
             coordinates={coordinates}
             places={places}
+            setChildClicked={setChildClicked}
           />
         </Grid>
       </Grid>

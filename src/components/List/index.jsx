@@ -14,7 +14,8 @@ import PlaceDetails from '../PlaceDetails';
 
 import useStyles from './styles.js';
 
-const List = ( { places }) => {
+const List = ( { places, childClicked }) => {
+  console.log("🚀 ~ List ~ childClicked:", childClicked)
   const { classes } = useStyles();
 
   const [type, setType] = useState('restaurants');

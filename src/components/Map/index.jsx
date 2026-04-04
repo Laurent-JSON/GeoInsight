@@ -7,7 +7,7 @@ import placeholderImage from '../../assets/Restaurant-Placeholder-001.jpg'
 
 import useStyles from './styles.js';
 
-const Map = ({ coordinates, places, setCoordinates, setBounds, setMarkerClicked, weatherData }) => {
+const Map = ({ coordinates, places, setCoordinates, setBounds, setChildClicked, weatherData }) => {
   const { classes } = useStyles();
   const isDesktop = useMediaQuery('(min-width:600px)');
 
@@ -26,7 +26,6 @@ const Map = ({ coordinates, places, setCoordinates, setBounds, setMarkerClicked,
           setBounds({ lat: e.center.lat, lng: e.center.lng });
           setBounds({ ne: e.marginBounds.ne, sw: e.marginBounds.sw });
         }}
-        // onChildClick={''}
         onChildClick={(child) => setChildClicked(child)}
       >
         {places?.length && places.map((place, i) => {
