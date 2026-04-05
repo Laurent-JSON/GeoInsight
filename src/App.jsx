@@ -31,6 +31,9 @@ const App = () => {
 
 
   }, [coordinates, bounds])
+  useEffect(() => {
+    setChildClicked(null);
+  }, [places]);
   return (
     <>
       <CssBaseline />

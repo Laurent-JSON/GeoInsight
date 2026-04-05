@@ -5,7 +5,6 @@ import {
   MenuItem,
   FormControl,
   Select,
-  Grid,
   Stack,
   Box,
   CircularProgress,
@@ -24,16 +23,8 @@ const List = ({ places, childClicked, isLoading }) => {
 
   useEffect(() => {
     setElRefs((refs) => Array(places?.length).fill().map((_, i) => refs[i] || createRef()));
-    // const refs = Array(places.length).fill().map((_, i) => refs[i] || createRef());
-    // setElRefs(refs);
   }, [places]);
-  // useEffect(() => {
-  //   setElRefs((refs) =>
-  //     Array(places?.length || 0)
-  //       .fill()
-  //       .map((_, i) => refs[i] || createRef())
-  //   );
-  // }, [places]);
+
   // configuration du menu
   const menuProps = {
     anchorOrigin: {
